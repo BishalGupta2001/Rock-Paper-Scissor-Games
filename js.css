@@ -1,0 +1,29 @@
+.rule-info.visible {
+  visibility: visible;
+}
+
+.gameSection.hidden {
+  visibility: hidden;
+}
+
+.playAgainButton.visible {
+  visibility: visible;
+}
+
+.picked-heading.visible {
+  visibility: visible;
+}
+
+.winner-update.visible {
+  visibility: visible;
+}
+#against-pc.visible {
+  visibility: visible;
+}
+#nextPageRedirect.visible {
+  visibility: visible;
+}
+
+.whatHaveBeenPicked.visible {
+  visibility: visible;
+}

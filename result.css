@@ -1,0 +1,141 @@
+body {
+  width: auto;
+  height: 100%;
+  position: relative;
+  background: #8cc461;
+}
+
+.container {
+  margin-top: 5%;
+}
+
+.stars {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.trophy {
+  display: flex;
+  justify-content: center;
+  margin-top: -12%;
+}
+
+.hurray h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 3rem;
+  letter-spacing: 5px;
+}
+
+.hurray h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 2rem;
+  letter-spacing: 3px;
+}
+
+.playAgainButton {
+  color: #6b6b6b;
+  text-transform: uppercase;
+  padding: 0.7rem 1rem;
+  border: 2px solid white;
+  border-radius: 10px;
+  background-color: white;
+  cursor: pointer;
+  width: 95px;
+  margin-left: 45%;
+}
+
+.playAgainButton a {
+  text-decoration: none;
+  color: #6b6b6b;
+}
+
+/* rule btn css borrow from style.css same */
+
+.rule-info {
+  position: relative;
+  visibility: hidden;
+  height: 388px;
+  width: 270px;
+  background-color: #004429;
+  border: 10px solid white;
+  border-radius: 35px;
+  margin: -22% 0 0 77%;
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+  color: white;
+}
+
+li {
+  list-style-type: square;
+}
+
+li::marker {
+  color: yellow;
+}
+.rule-heading h1 {
+  font-size: 2rem;
+  margin: -22% 0 2% 55px;
+}
+
+.closeButton {
+  position: relative;
+  height: 60px;
+  width: 60px;
+  background-color: white;
+  border-radius: 50%;
+  margin-left: 93%;
+  top: -12%;
+}
+
+.closeButtonBorder {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: red;
+  top: 5px;
+  left: 5.5px;
+}
+
+.closeButton span {
+  position: relative;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 6px;
+  cursor: pointer;
+}
+
+/* ok code */
+#rules-btn {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: 2%;
+  margin-top: 1%;
+}
+
+#button {
+  color: rgb(255, 237, 237);
+  border: 2px solid rgb(255, 232, 232);
+  border-radius: 8px;
+  letter-spacing: 2px;
+  font-size: 19px;
+  cursor: pointer;
+  font-weight: 600;
+  padding: 0.5rem;
+  background: transparent;
+}
+
+.rule-info.visible {
+  visibility: visible;
+}

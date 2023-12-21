@@ -1,0 +1,361 @@
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  position: relative;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: #8cc461;
+}
+
+.scoreBoard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 3px solid white;
+  border-radius: 1rem;
+  width: 52%;
+  height: 158px; /*20%*/
+  margin: 3% 25% 0 25%;
+}
+
+.RPS {
+  text-transform: uppercase;
+  color: white;
+  font-weight: 600;
+  font-size: 2rem;
+  margin-left: 1rem;
+  letter-spacing: 2px;
+}
+
+.scoreUpdate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 2%;
+  gap: 2rem;
+}
+
+.scoreBoard-pc,
+.scoreBoard-user {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 125px;
+  width: 145px;
+  background-color: white;
+  font-size: 1.2rem;
+  border-radius: 9px;
+  letter-spacing: 2px;
+  line-height: 25px;
+}
+
+#pcScoreBoard,
+#userScoreBoard {
+  font-size: 4rem;
+  line-height: 75px;
+}
+
+.picked-heading {
+  visibility: hidden;
+  display: flex;
+  align-self: center;
+  width: 32%;
+  color: white;
+  margin-top: 9.5%;
+  justify-content: space-between;
+  position: relative;
+  position: absolute;
+  margin-left: 32%;
+}
+
+/* game section */
+.gameSection {
+  /* visibility: hidden; */
+  margin-top: 2.5%;
+  height: 240px;
+  width: 33%;
+  margin-left: 35%;
+}
+
+.rockAndScissor {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  height: 53%;
+}
+
+#rock {
+  z-index: 1;
+}
+
+#scissor {
+  z-index: 1;
+  height: fit-content;
+  width: fit-content;
+}
+
+#paper {
+  z-index: 1;
+  display: inline-block;
+  margin-left: 51%;
+  margin-top: 25%;
+}
+
+.outerCircle-one {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+  background-color: #0074b6;
+  cursor: pointer;
+}
+
+.outerCircle-two {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+  background-color: #bd00ff;
+  cursor: pointer;
+}
+.outerCircle-three {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+  background-color: #ffa943;
+  margin-left: -100%;
+  cursor: pointer;
+}
+
+.innerCircle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+/* lines */
+.container {
+  margin-top: 5%;
+  margin-left: 50%;
+}
+#line-1 {
+  height: 239px;
+  width: 8px;
+  background: #313131;
+  transform: rotate(90deg);
+  bottom: 60%;
+  margin-left: -141%;
+  margin-left: -600%;
+  z-index: -1;
+}
+
+#line-2 {
+  height: 205px;
+  width: 8px;
+  margin-left: -1680%;
+  background: #313131;
+  transform: rotate(28deg);
+  bottom: -90%;
+  z-index: -1;
+}
+
+#line-3 {
+  height: 205px;
+  width: 8px;
+  margin-left: -3464%;
+  background: #313131;
+  transform: rotate(-28deg);
+  top: -70%;
+  z-index: -1;
+}
+
+.rule-info {
+  visibility: hidden;
+  height: 426px;
+  width: 321px;
+  background-color: #004429;
+  border: 10px solid white;
+  border-radius: 35px;
+  margin: -14% 0 1% 77%;
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+  color: white;
+}
+
+li {
+  list-style-type: square;
+}
+
+li::marker {
+  color: yellow;
+}
+.rule-heading h1 {
+  font-size: 2rem;
+  margin: -22% 0 2% 55px;
+}
+
+.rules {
+  padding: 1.1rem;
+}
+
+.closeButton {
+  height: 60px;
+  width: 60px;
+  background-color: white;
+  border-radius: 50%;
+  z-index: 99;
+  top: -12%;
+  left: 94%;
+}
+
+.closeButtonBorder {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: red;
+  top: 5px;
+  left: 5.5px;
+}
+
+.closeButton span {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 6px;
+  cursor: pointer;
+}
+
+#rules-btn {
+  display: block;
+  display: flex;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  flex-direction: row-reverse;
+  margin-right: 3%;
+}
+
+#button {
+  color: rgb(255, 237, 237);
+  border: 2px solid rgb(255, 232, 232);
+  border-radius: 8px;
+  letter-spacing: 2px;
+  font-size: 19px;
+  cursor: pointer;
+  font-weight: 600;
+  padding: 0.5rem;
+  background: transparent;
+}
+
+.winner-update {
+  /* visibility: hidden; */
+  position: absolute;
+  margin-left: 43%;
+  margin-top: 15%;
+}
+
+#you-win {
+  text-align: center;
+  font-weight: 600;
+  color: white;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+#against-pc {
+  visibility: hidden;
+  width: 100%;
+  margin-top: 10%;
+  font-weight: 600;
+  color: white;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 1rem;
+}
+
+.playAgainButton {
+  visibility: hidden;
+  color: #6b6b6b;
+  text-transform: uppercase;
+  padding: 0.7rem 1rem;
+  border: 2px solid white;
+  border-radius: 10px;
+  background-color: white;
+  cursor: pointer;
+  width: 130px;
+  margin-left: 43.7%;
+  position: absolute;
+  margin-top: 24%;
+  z-index: 9999; /*cirle hataya na toh kam nhi de raha tha toh ye lagaya */
+}
+
+.playAgainButton a {
+  text-decoration: none;
+  color: #6b6b6b;
+}
+
+.nextButton {
+  display: flex;
+  position: fixed;
+  bottom: rem;
+  right: 2rem;
+  flex-direction: row-reverse;
+  margin-right: 10%;
+}
+
+.nextButton a {
+  text-decoration: none;
+}
+
+#nextPageRedirect {
+  margin-top: 20%;
+  color: rgb(255, 237, 237);
+  border: 2px solid rgb(255, 232, 232);
+  border-radius: 8px;
+  letter-spacing: 2px;
+  font-size: 19px;
+  cursor: pointer;
+  font-weight: 600;
+  padding: 0.5rem;
+  background: transparent;
+}
+
+.whatHaveBeenPicked {
+  visibility: hidden;
+}
+.userPickedDisplay {
+  text-transform: uppercase;
+  font-size: 2rem;
+  position: absolute;
+  margin-top: 14%;
+  margin-left: 32%;
+}
+
+.pcPickedDisplay {
+  text-transform: uppercase;
+  font-size: 2rem;
+  position: absolute;
+  margin-top: 14%;
+  margin-left: 59%;
+}
